@@ -16,7 +16,5 @@ with open(FILEPATH, "rb") as f:
             print(pickle.load(f))
     except EOFError:
         print("Caught EOFError. Reached the end.")
-    except:
-        print("An error has occured.")
 
 os.remove(FILEPATH)
